@@ -1,0 +1,20 @@
+<ion-header>
+<ion-toolbar>
+  <ion-title>Mi perfil</ion-title>
+  <ion-buttons slot="start">
+    <ion-back-button defaultHref="home"></ion-back-button>
+  </ion-buttons>
+</ion-toolbar>
+</ion-header>
+<ion-content>
+  <br>
+<ion-title> Nombre : {{user.id}} </ion-title><br>
+<ion-title>Correo:   Lorem Ipsum </ion-title><br>
+<div style="padding: 50px;">
+<ion-button color ="success" expand ="block"routerLink="/camera"> Cámara RA   </ion-button>
+<ion-button color="secondary" expand ="block"> Notificaciones</ion-button>
+<ion-button  expand ="50%" routerLink="/chat"> Asistente      </ion-button>
+<ion-button  expand ="50%"> Ajustes        </ion-button>
+</div>
+</ion-content>
+

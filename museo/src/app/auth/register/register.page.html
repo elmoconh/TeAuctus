@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Formulario de Registro</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form [formGroup] ="form" (submit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input type="text" required formControlName ="nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Correo</ion-label>
+      <ion-input type="text" required formControlName ="correo"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" required formControlName ="pass"></ion-input>
+    </ion-item>
+    <!--<ion-item>
+      <ioXn-label position="floating">Confirmar Contraseña</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>-->
+    <ion-button type="submit" class="ion-margin-top" expand="block" [disabled]="form.invalid"> Registrar</ion-button>
+ </form>
+</ion-content>
